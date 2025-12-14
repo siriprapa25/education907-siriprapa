@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import ChapterCard from "@/components/ChapterCard";
 
 export default function Page() {
@@ -55,9 +54,7 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white pb-20">
-      <Header />
-
-      <div className="max-w-5xl mx-auto px-6 mt-10">
+      <div className="max-w-5xl mx-auto px-6 py-8">
         {/* Course header card */}
         <section id="description" className="mb-8">
           <div className="bg-white/90 border border-blue-100 rounded-2xl p-6 shadow-md">

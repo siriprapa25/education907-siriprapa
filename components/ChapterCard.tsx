@@ -1,14 +1,33 @@
+import { ReactNode } from "react";
+
 interface ChapterCardProps {
   title: string;
-  description: string;
+  description?: string;
+  children?: ReactNode;
+  variant?: "default" | "highlight";
 }
 
-export default function ChapterCard({ title, description }: ChapterCardProps) {
+export default function ChapterCard({
+  title,
+  description,
+  children,
+}: ChapterCardProps) {
   return (
-    <div className="p-6 bg-white rounded-2xl border border-blue-100 
-    shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-      <h2 className="font-semibold text-xl text-blue-800">{title}</h2>
-      <p className="text-gray-600 mt-2">{description}</p>
+    <div
+      className="
+        p-6 bg-white rounded-2xl border border-blue-100
+        shadow-md transition duration-300 ease-out
+        hover:shadow-xl hover:-translate-y-0.5
+      "
+    >
+      <h2 className="font-semibold text-xl text-blue-800 mb-2">
+        {title}
+      </h2>
+
+      <div className="text-gray-600 leading-relaxed">
+        {description && <p>{description}</p>}
+        {children}
+      </div>
     </div>
   );
 }
