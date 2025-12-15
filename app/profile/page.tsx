@@ -10,7 +10,7 @@ export default function ProfilePage() {
       <section className="relative py-20 overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-sky-200/40 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 -left-20 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -left-20 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 text-center relative">
           {/* Profile Picture */}
@@ -27,7 +27,7 @@ export default function ProfilePage() {
           </div>
 
           {/* Name & Position */}
-          <h1 className="text-4xl font-bold mt-8">
+          <h1 className="text-4xl font-bold mt-20">
             Siriprapa Horadee
           </h1>
           <p className="text-lg text-slate-600 mt-2">
@@ -52,7 +52,7 @@ export default function ProfilePage() {
 
           {/* Skills */}
           <ChapterCard title="Skills">
-            <ul className="list-disc list-outside pl-5 space-y-2 text-slate-700">
+            <ul className="list-outside pl-5 space-y-2 text-slate-700">
               <li>React / Next.js</li>
               <li>Node.js / Express</li>
               <li>UI / UX Design</li>

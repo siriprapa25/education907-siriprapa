@@ -1,8 +1,11 @@
+import Image from "next/image";
 import { ReactNode } from "react";
 
 interface ChapterCardProps {
   title: string;
   description?: string;
+  image?: string;
+  onClick?: () => void;
   children?: ReactNode;
   variant?: "default" | "highlight";
 }
@@ -10,8 +13,14 @@ interface ChapterCardProps {
 export default function ChapterCard({
   title,
   description,
+  image,
+  onClick,
   children,
+  variant = "default",
 }: ChapterCardProps) {
+
+
+
   return (
     <div
       className="

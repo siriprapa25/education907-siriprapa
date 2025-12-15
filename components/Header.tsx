@@ -23,8 +23,8 @@ export default function Header() {
         {/* Right Menu */}
         <nav className="flex gap-6 text-white text-lg">
           <Link href="/" className="hover:text-blue-200 transition">หน้าแรก</Link>
-          <Link href="/description" className="hover:text-blue-200 transition">คำอธิบายรายวิชา</Link>
           <Link href="/profile" className="hover:text-blue-200 transition">โปรไฟล์</Link>
+          <Link href="/certificates" className="hover:text-blue-200 transition">ใบเกียรติบัตร</Link>
         </nav>
       </div>
     </header>
